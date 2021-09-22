@@ -1,0 +1,130 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="music_store" type="music_storeType"/>
+		<xs:complexType name="store_detailsType">
+			<xs:sequence>
+				<xs:element type="xs:string" name="logo"/>
+				<xs:element type="xs:string" name="store_name"/>
+				<xs:element type="xs:string" name="address"/>
+				<xs:element ref="contact_number"/>
+				<xs:element type="xs:anyURI" name="website"/>
+				<xs:element type="xs:string" name="email"/>
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:element name="contact_number" >
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[0-9]{10}"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		
+		<xs:complexType name="imageType">
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute type="xs:byte" name="id" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	
+		<xs:complexType name="soundTrackType" mixed="true">
+			<xs:sequence>
+				<xs:element type="xs:string" name="Name" minOccurs="0"/>
+				<xs:element type="imageType" name="image" minOccurs="0"/>
+				<xs:element type="xs:string" name="Singer" minOccurs="0"/>
+				<xs:element type="xs:string" name="Producer" minOccurs="0"/>
+				<xs:element type="xs:string" name="Director" minOccurs="0"/>
+				<xs:element type="xs:string" name="Writer" minOccurs="0"/>
+				<xs:element type="xs:string" name="Release_Year" minOccurs="0"/>
+			</xs:sequence>
+			
+			<xs:attribute type="xs:byte" name="soundtrack_ID" use="optional"/>
+			<xs:attribute type="xs:byte" name="pop_ID" use="optional"/>
+			<xs:attribute type="xs:byte" name="jazz_ID" use="optional"/>
+			<xs:attribute type="xs:byte" name="rock_ID" use="optional"/>
+			<xs:attribute type="xs:byte" name="dubstep_ID" use="optional"/>
+			<xs:attribute type="xs:byte" name="country_ID" use="optional"/>
+			<xs:attribute type="xs:byte" name="soul_ID" use="optional"/>
+		</xs:complexType>
+		
+		<xs:element name="genre_title">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="POP"/>
+					<xs:enumeration value="JAZZ"/>
+					<xs:enumeration value="ROCK"/>
+					<xs:enumeration value="DUBSTEP"/>
+					<xs:enumeration value="COUNTRY"/>
+					<xs:enumeration value="SOUL"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		
+		<xs:complexType name="popGenre">
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element ref="genre_title"/>
+				<xs:element type="soundTrackType" name="soundtrack" maxOccurs="unbounded" minOccurs="0"/>
+			</xs:choice>
+		</xs:complexType>
+		
+		
+		
+		<xs:complexType name="jazzGenre">
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element ref="genre_title"/>
+				<xs:element type="soundTrackType" name="soundtrack"/>
+			</xs:choice>
+		</xs:complexType>
+  
+	<xs:complexType name="rockGenre">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element ref="genre_title"/>
+			<xs:element type="soundTrackType" name="soundtrack"/>
+		</xs:choice>	
+	</xs:complexType>
+	
+	<xs:complexType name="dubstepGenre">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element ref="genre_title"/>
+			<xs:element type="soundTrackType" name="soundtrack"/>
+		</xs:choice>
+	</xs:complexType>
+  
+	<xs:complexType name="countryGenre">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element ref="genre_title"/>
+			<xs:element type="soundTrackType" name="soundtrack"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="soulGenre">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element ref="genre_title"/>
+			<xs:element type="soundTrackType" name="soundtrack"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="songsGenre">
+		<xs:sequence>
+			<xs:element type="popGenre" name="pop"/>
+			<xs:element type="jazzGenre" name="jazz"/>
+			<xs:element type="rockGenre" name="rock"/>
+			<xs:element type="dubstepGenre" name="dubstep"/>
+			<xs:element type="countryGenre" name="country"/>
+			<xs:element type="soulGenre" name="soul"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="music_storeType">
+		<xs:sequence>
+			<xs:element type="store_detailsType" name="store_details">
+				<xs:annotation>
+					<xs:documentation>Store Details</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			
+			<xs:element type="songsGenre" name="songs"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

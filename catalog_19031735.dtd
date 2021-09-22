@@ -1,0 +1,107 @@
+<!ELEMENT music_store (store_details,songs)>
+<!ATTLIST music_store
+  xmlns CDATA #FIXED ''
+  xmlns:xs CDATA #FIXED 'http://www.w3.org/2001/XMLSchema-instance'
+  xs:noNamespaceSchemaLocation NMTOKEN #REQUIRED>
+
+<!ELEMENT store_details (logo,store_name,address,contact_number,website,
+                         email)>
+<!ATTLIST store_details
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT songs (pop,jazz,rock,dubstep,country,soul)>
+<!ATTLIST songs
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT logo EMPTY>
+<!ATTLIST logo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT store_name (#PCDATA)>
+<!ATTLIST store_name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT address ANY>
+<!ATTLIST address
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT contact_number (#PCDATA)>
+<!ATTLIST contact_number
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT website (#PCDATA)>
+<!ATTLIST website
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT pop (soundtrack|genre_title)+>
+<!ATTLIST pop
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT jazz (soundtrack|genre_title)+>
+<!ATTLIST jazz
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rock (soundtrack|genre_title)+>
+<!ATTLIST rock
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT dubstep (soundtrack|genre_title)+>
+<!ATTLIST dubstep
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT country (soundtrack|genre_title)+>
+<!ATTLIST country
+  xmlns CDATA #FIXED ''>
+  
+<!ELEMENT soul (soundtrack|genre_title)+>
+<!ATTLIST soul
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT genre_title (#PCDATA)>
+<!ATTLIST genre_title
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT soundtrack (Name,image,Singer,Producer,Director,Writer,Release_Year)>
+<!ATTLIST soundtrack
+  xmlns CDATA #FIXED ''
+  soundtrack_ID CDATA #REQUIRED
+  country_ID CDATA #IMPLIED
+  dubstep_ID CDATA #IMPLIED
+  jazz_ID CDATA #IMPLIED
+  pop_ID CDATA #IMPLIED
+  rock_ID CDATA #IMPLIED
+  soul_ID CDATA #IMPLIED
+>
+
+<!ELEMENT Name (#PCDATA)>
+<!ATTLIST Name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+  xmlns CDATA #FIXED ''
+  id CDATA #REQUIRED>
+
+<!ELEMENT Singer (#PCDATA)>
+<!ATTLIST Singer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Producer (#PCDATA)>
+<!ATTLIST Producer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Director (#PCDATA)>
+<!ATTLIST Director
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Writer (#PCDATA)>
+<!ATTLIST Writer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Release_Year (#PCDATA)>
+<!ATTLIST Release_Year
+  xmlns CDATA #FIXED ''>

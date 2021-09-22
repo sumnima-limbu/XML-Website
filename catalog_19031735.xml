@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE music_store SYSTEM "catalog_19031735.dtd">
+
+<!-- External CSS -->
+<?xml-stylesheet type="text/css" href="catalog_19031735.css"?> 
+
+<!-- Schema -->
+<music_store xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+			xs:noNamespaceSchemaLocation="catalog_19031735.xsd">
+
+	<!--Store Details -->
+	<store_details>
+		<logo></logo>
+		<store_name>Soul Sound</store_name>
+		<address>Address: Baneshwor, Kathmandu</address>
+		<contact_number>9833748484</contact_number>
+		<website>Website:www.soulsound.com</website>
+		<email>Email:soulsound@gmail.com</email>		
+	</store_details>
+	
+	<!-- Available Music Category -->
+	<songs>
+		<pop>
+			<genre_title>POP</genre_title>
+			<soundtrack soundtrack_ID='1' pop_ID='56'>
+				<Name>Song: Your Power </Name>
+				<image id='1'></image>
+				<Singer>Singer: Billie Eilish</Singer>
+				<Producer>Producer: Finneas</Producer>
+				<Director>Director: Bilie Eilish</Director>
+				<Writer>Writer: Billie Eilish O'Connell, Finneas O'Connell</Writer>
+				<Release_Year>Release: April 29, 2021</Release_Year>
+			</soundtrack>
+		
+			<soundtrack soundtrack_ID='2' pop_ID='57'>
+				<Name>Song: Baila Conmigo</Name>
+				<image id='2'></image>
+				<Singer>Singer: Selena Gomez, Rauw Alejandro</Singer>
+				<Producer>Producer: Albert Hype, Jota Rosa, Tainy</Producer>
+				<Director>Director: Fernando Nogari </Director>
+				<Writer>Writer: Abner Cordero BoriaAlberto Carlos MelendezAlejandro Borrero</Writer>
+				<Release_Year>Release: January 29, 2021</Release_Year>
+			</soundtrack>
+		</pop>
+		
+		<jazz>
+			<genre_title>JAZZ</genre_title>
+			<soundtrack soundtrack_ID='3' jazz_ID='58'>
+				<Name>Song: The Girl from Ipanema</Name>
+				<image id='3'></image>
+				<Singer>Singer: Astrud Gilberto, João Gilberto, Stan Getz  </Singer>
+				<Producer>Producer: Creed Taylor </Producer>
+				<Director>Director: Antônio Carlos Jobim </Director>
+				<Writer>Writer: Vinícius de Moraes (Portuguese lyrics)Norman Gimbel (English lyrics)</Writer>
+				<Release_Year>Released: May 1964 </Release_Year>
+			</soundtrack>
+			
+			<soundtrack soundtrack_ID='4' jazz_ID='59'>
+				<Name>Song: What a Wonderful World</Name>
+				<image id='4'></image>
+				<Singer>Singer: Louis Armstrong</Singer>
+				<Producer>Producer: Bob Thiele </Producer>
+				<Director>Director: Cait Davis </Director>
+				<Writer>Writer: Bob Thiele, George David Weiss</Writer>
+				<Release_Year>Released: 1967 </Release_Year>
+			</soundtrack>
+		</jazz>
+		
+		<rock>
+			<genre_title>ROCK</genre_title>
+			<soundtrack soundtrack_ID='5' rock_ID='60'>
+				<Name>Song: Sweet Child O' Mine</Name>
+				<image id='5'></image>
+				<Singer>Singer: Guns N' Roses </Singer>
+				<Producer>Producer: Mike Clink</Producer>
+				<Director>Director: Nigel Dick </Director>
+				<Writer>Writer: Axl Rose, Izzy Stradlin, Slash, Duff McKagan, Steven Adler</Writer>
+				<Release_Year>Released: June 21, 1988(US), August 15, 1988(UK)
+				</Release_Year>
+			</soundtrack>
+			
+			<soundtrack soundtrack_ID='11' rock_ID='61'>
+				<Name>Song: We Will Rock You</Name>
+				<image id='7'></image>
+				<Singer>Singer: Queen </Singer>
+				<Producer>Producer: Mike Stone</Producer>
+				<Director>Director: Christopher Renshaw </Director>
+				<Writer>Writer: Brian May</Writer>
+				<Release_Year>Released: 1977
+				</Release_Year>
+			</soundtrack>
+		</rock>
+		
+		<dubstep>
+			<genre_title>DUBSTEP</genre_title>
+			<soundtrack soundtrack_ID='12' dubstep_ID='62'>
+				<Name>Song: I Need Air</Name>
+				<image id='8'></image>
+				<Singer>Singer: Angela Hunte </Singer>
+				<Producer>Producer: Magnetic Man</Producer>
+				<Director>Director: Magnetic Man</Director>
+				<Writer>Writer: Arthur Smith, Angela Hunte, Beni Adejumo, Oliver Jones</Writer>
+				<Release_Year>Released: July 23, 2010 </Release_Year>
+			</soundtrack>
+			
+			<soundtrack soundtrack_ID='9' dubstep_ID='63'>
+				<Name>Song: Scary Monsters and Nice Sprites</Name>
+				<image id='9'></image>
+				<Singer>Singer: Skrillex </Singer>
+				<Producer>Producer: Bare Noize, Foreign Beggars, Noisia, Skrillex, Zedd</Producer>
+				<Director>Director: Gaëtan Borne </Director>
+				<Writer>Writer: Arthur Smith, Angela Hunte, Beni Adejumo, Oliver Jones</Writer>
+				<Release_Year>Released: 2010 </Release_Year>
+			</soundtrack>
+		</dubstep>
+		
+		<country>
+			<genre_title>COUNTRY</genre_title>
+			<soundtrack soundtrack_ID='10' country_ID='61'>
+				<Name>Song: She's In Love With The Boy </Name>
+				<image id='10'></image>
+				<Singer>Singer: Trisha Yearwood </Singer>
+				<Producer>Producer: Garth Fundis</Producer>
+				<Director>Director: Marc Ball </Director>
+				<Writer>Writer: Jon Ims</Writer>
+				<Release_Year>Released: March 1991 </Release_Year>
+			</soundtrack>
+			
+			<soundtrack soundtrack_ID='6' country_ID='61'>
+				<Name>Song: The Dance </Name>
+				<image id='11'></image>
+				<Singer>Singer: Garth Brooks </Singer>
+				<Producer>Producer: Allen Reynolds</Producer>
+				<Director>Director: John Lloyd Miller </Director>
+				<Writer>Writer: Tony Arata</Writer>
+				<Release_Year>Released: April 30, 1990 </Release_Year>
+			</soundtrack>
+		</country>
+		
+		<soul>
+			<genre_title>SOUL</genre_title>
+			<soundtrack soundtrack_ID='7' soul_ID='63'>
+				<Name>Song: Like I'm Gonna Lose You </Name>
+				<image id='12'></image>
+				<Singer>Singer: Meghan Trainor, John Legend</Singer>
+				<Producer>Producer: Chris Gelbuda, Meghan Trainor  </Producer>
+				<Director>Director: Constellation Jones </Director>
+				<Writer>Writer: Meghan Trainor, Justin Weavor, Caitlyn Smith </Writer>
+				<Release_Year>Released: June 23, 2015 </Release_Year>
+			</soundtrack>
+			
+			<soundtrack soundtrack_ID='8' soul_ID='63'>
+				<Name>Song: Mercy Mercy Me </Name>
+				<image id='13'></image>
+				<Singer>Singer: Marvin Gaye</Singer>
+				<Producer>Producer: Marvin Gaye  </Producer>
+				<Director>Director: Marvin Gaye </Director>
+				<Writer>Writer: Marvin Gaye </Writer>
+				<Release_Year>Released: June 10, 1971 </Release_Year>
+			</soundtrack>
+		</soul>
+	</songs>
+</music_store>

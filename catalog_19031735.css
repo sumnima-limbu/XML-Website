@@ -1,0 +1,210 @@
+music_store{
+	display: relative;
+	text-align: center;
+	font-family: "Trebuchet MS", Tahoma, sans-serif;
+	background-color: black;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+store_details{
+	background-image:url(images/img.jpg);
+	width: 1450px;
+	height: 760px;
+	position: absolute;
+	top:0;
+	left:0;	
+}
+
+store_name{
+	text-align: center;
+	font-weight: bold;
+	font-size: 100px;
+	color: #D1D7E0;
+	position: absolute;
+	top: 240px;
+	left: 490px;
+	opacity: 0.8;
+}
+
+address,contact_number,website,email{
+	background-color: #D83F87;
+	border: 3px solid #D83F87;
+	padding: 10px;
+	font-size: 18px;
+	color: #FEFFFF;
+}
+
+address{
+	position: absolute;
+	top: 0px;
+	left: 990px;
+	height: 20px;
+	width: 320px;
+}
+
+contact_number{
+	position: absolute;
+	top: 40px;
+	left:990px;
+	width: 320px;
+}
+
+website{
+	position: absolute;
+	top: 80px;
+	left: 990px;
+	width: 320px;
+}
+
+email{
+	position: absolute;
+	top: 120px;
+	left: 990px;
+	width: 320px;
+}
+
+logo{
+	background-image:url(images/logo.jpg);
+	width: 210px;
+	height: 160px;
+	position: absolute;
+	top: 215px;
+	left: 255px;
+	border-radius: 8px;
+}
+
+songs{
+	display: block;
+	margin-top: 800px;	
+}
+
+pop,jazz,rock,dubstep,country,soul{
+	display:inline-block;
+	width: 95%;
+	padding: 40px;
+}
+
+soundtrack{
+	display: float;
+	float: left;
+	width: 45%;
+	border: 2px solid white;
+	margin: 25px;
+	border-radius: 5px;
+	margin: 30px;
+	transition: transform .3s ease;
+}
+
+genre_title{
+	background-color: #D83F87;
+	border: 3px solid #D83F87;
+	color: #FEFFFF;
+	font-size: 25px;
+	padding: 20px;
+	width: 100px;
+	display: block;
+}
+
+Name{
+	display: block;
+	font-size: 30px;
+	color: pink;
+	padding: 20px 0 20px 8px;
+}
+Singer,Producer,Director,Writer,Release_Year{
+	display: list-item;
+	list-style-type: square;
+	list-style-position: inside;
+	text-align: left;
+	font-size: 18px;
+	padding-left: 100px;
+	padding-bottom: 15px;
+	margin-right: 30px;
+	color: white;
+	opacity: 0.9;
+}
+
+logo:hover{
+	transform: scale(1.1);
+}
+
+store_name:hover{
+	font-size: 109px;
+	color: #802BB1;
+}
+
+image{
+	padding-right: 10px;
+	padding-bottom: 35px;
+	width: 230px;
+	height: 230px;
+}
+image[id='1']{
+	content: url(images/img1.jpg);
+	padding-bottom: 55px;
+}
+
+image[id='2']{
+	content: url(images/img2.jpg);
+} 
+
+image[id='3']{
+	content: url(images/img3.jpg);
+} 
+
+image[id='4']{
+	content: url(images/img4.jpeg);
+	padding-bottom: 55px;
+} 
+
+image[id='5']{
+	content: url(images/img5.jpeg);
+}
+
+image[id='7']{
+	content: url(images/img6.jpg);
+	padding-bottom: 55px;
+} 
+
+image[id='8']{
+	content: url(images/img7.jpg);
+	padding-bottom: 55px;
+} 
+
+image[id='9']{
+	content: url(images/img8.jpg);
+} 
+
+image[id='10']{
+	content: url(images/img9.jpg);
+} 
+
+image[id='11']{
+	content: url(images/img10.jpg);
+} 
+
+image[id='12']{
+	content: url(images/img11.jpg);
+} 
+
+image[id='13']{
+	content: url(images/img12.jpg);
+} 
+
+image:hover{
+	transition: transform .3s ease;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: scale(1.02);
+}
+
+soundtrack:hover{
+	border: 1px solid white;
+}
+
+genre_title:hover{
+	transform:scale(1.1);
+	opacity: 0.8;
+	
+}
+
